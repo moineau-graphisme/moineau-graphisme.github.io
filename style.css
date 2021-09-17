@@ -1,0 +1,32 @@
+/*
+selecteur(s) {
+propriété:valeur;
+}
+*/
+.gra {
+    font-family: "Overpass", serif;
+    font-size:clamp(180px,5vw,230px);
+}
+body{
+    background: #faf2ed;
+    color:#111;
+    font-family: sans-serif; 
+    line-height: 1; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:24px; 
+    margin: 24px;
+  }
+img {
+    max-width: 100%;
+    height: auto;
+    display: grid;
+}
+/*smart phone ha a finir*/
+
+@supports (display: flex) {
+    @media screen and (min-width: 900px) {
+      body{
+        display: flex;
+      }
+    }
