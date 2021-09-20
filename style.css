@@ -1,32 +1,59 @@
-/*
-selecteur(s) {
-propriété:valeur;
+.stiky{ display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin: 24px;
+  position: sticky;
+  top: 20px;
 }
-*/
 .gra {
-    font-family: "Overpass", serif;
-    font-size:clamp(180px,5vw,230px);
+  font-family: "Overpass", serif;
+  font-size: clamp(30px, 7vw, 180px);
+  display: block;
+  transition: all 0.25s;
 }
-body{
-    background: #faf2ed;
-    color:#111;
-    font-family: sans-serif; 
-    line-height: 1; 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:24px; 
-    margin: 24px;
-  }
-img {
-    max-width: 100%;
-    height: auto;
-    display: grid;
+.gra:hover{
+transform: translateY(-0.25em);
+cursor: pointer}
+.gro {
+  font-family: "Overpass", serif;
+  font-size: clamp(130px, 7vw, 180px);
+  display: block;
 }
-/*smart phone ha a finir*/
-
-@supports (display: flex) {
-    @media screen and (min-width: 900px) {
-      body{
-        display: flex;
-      }
-    }
+::selection {
+  background: rgba(174, 129, 245, 0.192);
+  border-radius: 50%;
+  color: rgba(116, 22, 145, 0.452);
+}
+a {color: black;
+text-decoration: none;}
+body {
+  background: #faf2ed;
+  color: #111;
+  font-family: sans-serif;
+  line-height: 1;
+  margin: 24px;
+}
+.row {   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 24px;}
+  .raw {   display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin: 24px;}
+    .riw{   display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin: 24px;;}
+      .ruw{   display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 24px;
+        margin: 24px;}
+        .rjw{display: grid;
+          grid-template-columns: 2fr 1fr;}
+img {max-width: 100%;
+  height: auto;
+  display: grid;
+}
+video{max-width: 100%;
+  display: grid;}
