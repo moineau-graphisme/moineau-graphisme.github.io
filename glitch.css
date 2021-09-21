@@ -1,0 +1,47 @@
+@font-face {
+    font-family: Jost-h;
+    src: url("/font/Jost-100-Hairline.otf");
+}
+@font-face {
+    font-family: Jost-i;
+    src: url("/font/Jost-200-ThinItalic.otf");
+}
+.glitch {
+    position: relative;
+    color: white;
+    font-size: 4em;
+    letter-spacing: .4em;
+    animation: glitch-skew 1s infinite linear;
+}
+
+@keyframes glitch-skew {
+    0% {
+    transform: skew(-1deg) translate(0.1em, 0em);
+    opacity: 1;
+    font-family: Jost-h;
+    }
+
+    25% {
+    opacity: 0.75;
+    color:#00e59b;
+    font-family: Jost-i;
+
+    }
+    50% {
+    opacity: 0.2;
+    transform: translate(0.1em, 0.1em);
+    font-family: Jost-h;
+    }
+    75% {
+    opacity: 0.3;
+    transform: skew(1deg) translate(0em, 0.1em);
+    text-decoration:line-through;
+    }
+    100% {
+    transform: skew(0deg) translate(0em, 0em);
+    opacity: 1;
+    font-family: Jost-h;
+    text-decoration:none;
+
+    }
+}
