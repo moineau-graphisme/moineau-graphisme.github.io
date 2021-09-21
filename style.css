@@ -15,7 +15,7 @@ transform: translateY(-0.25em);
 cursor: pointer}
 .gro {
   font-family: "Overpass", serif;
-  font-size: clamp(130px, 7vw, 180px);
+  font-size: clamp(30px, 7vw, 80px);
   display: block;
 }
 ::selection {
