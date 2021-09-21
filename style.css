@@ -4,11 +4,6 @@
   top: 5px;
   width: 100%;
 }
-.block{background-color: #000000;
-  opacity: 0.8;
-  background-image:  repeating-linear-gradient(45deg, #21ff00 25%, transparent 25%, transparent 75%, #21ff00 75%, #21ff00), repeating-linear-gradient(45deg, #21ff00 25%, #000000 25%, #000000 75%, #21ff00 75%, #21ff00);
-  background-position: 0 0, 10px 10px;
-  background-size: 20px 20px;}
 .gra {
   font-family: "Overpass", serif;
   font-size: clamp(30px, 7vw, 180px);
@@ -55,7 +50,14 @@ body {
         margin: 24px;}
         .rjw{display: grid;
           grid-template-columns: 2fr 1fr;}
-img {max-width: 30%;
+img {max-width: 45%;
   height: auto;
   display: grid;
 }
+/* 
+@media screen (min-width:300px) {
+  .index
+  ;template columns: ;
+  
+}*/
+
