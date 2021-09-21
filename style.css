@@ -31,6 +31,7 @@ body {
   font-family: sans-serif;
   line-height: 1;
   margin: 24px;
+  min-height:150vh;
 }
 .row {   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -50,14 +51,14 @@ body {
         margin: 24px;}
         .rjw{display: grid;
           grid-template-columns: 2fr 1fr;}
-img {max-width: 45%;
+img {max-width: 100%;
   height: auto;
   display: grid;
 }
 /* 
 @media screen (min-width:300px) {
-  .index
+  .index{
   ;template columns: ;
-  
-}*/
+  }
+*/
 
